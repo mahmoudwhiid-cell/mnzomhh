@@ -1,0 +1,623 @@
+```css
+.rakkas-regular {
+  font-family: "Rakkas", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.amiri-quran-regular {
+  font-family: "Amiri Quran", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ==================== Reset ==================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==================== Body ==================== */
+
+body {
+  background: linear-gradient(#111, #222);
+  position: relative;
+}
+
+/* ==================== Main Layout ==================== */
+
+main {
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+
+  max-width: 1400px;
+  margin: auto;
+
+  height: 15vh;
+}
+
+/* ==================== Logo ==================== */
+
+.logo {
+  position: relative;
+  display: inline-block;
+
+  color: #35ac9d;
+  font-size: 3rem;
+
+  animation: float 3s ease-in-out infinite;
+}
+
+.logo::after {
+  content: "";
+
+  position: absolute;
+
+  width: 120px;
+  height: 20px;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  border-radius: 50%;
+
+  left: 50%;
+  bottom: -15px;
+
+  transform: translateX(-50%);
+
+  filter: blur(10px);
+
+  animation: shadow 3s ease-in-out infinite;
+}
+
+/* ==================== Logo Animation ==================== */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.5;
+  }
+}
+
+/* ==================== Navigation ==================== */
+
+nav {
+  display: flex;
+  align-items: center;
+
+  width: 80%;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+
+  margin-right: 20%;
+}
+
+.links a {
+  text-decoration: none;
+
+  font-size: 1.2rem;
+
+  margin-right: 1rem;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+
+  color: #35ac9d;
+
+  font-family: "Amiri Quran", serif;
+}
+
+.links a:hover {
+  color: #7baca5;
+  transform: translateY(-2px);
+}
+
+/* ==================== Icons ==================== */
+
+.fa-searchengin {
+  font-size: 2rem;
+
+  padding: 0.5rem;
+
+  cursor: pointer;
+
+  color: #35ac9d;
+
+  border: 1px solid #35ac9d;
+}
+
+.fa-phone {
+  margin-left: 5px;
+}
+
+/* ==================== Hero Section ==================== */
+
+.desc {
+  width: 80%;
+
+  margin: auto;
+  margin-top: 1.5rem;
+
+  text-align: center;
+
+  min-height: 80vh;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  background: rgba(255, 255, 255, 0.111);
+
+  border-radius: 4rem;
+
+  padding: 1.1rem;
+
+  font-family: "Tajawal";
+
+  color: aliceblue;
+
+  overflow: hidden;
+}
+
+.desc h2 {
+  margin-bottom: 10%;
+}
+
+.desc p {
+  color: #35ac9d;
+  font-size: 1rem;
+}
+
+/* ==================== Animated Icons ==================== */
+
+.animat {
+  width: 95%;
+
+  margin-right: 0.5%;
+
+  height: 5000px;
+
+  align-self: flex-start;
+
+  position: absolute;
+
+  animation: translate 90s infinite linear;
+}
+
+.animat i {
+  position: absolute;
+
+  animation: rotate 10s infinite linear;
+
+  opacity: 0.3;
+}
+
+/* ==================== Icons Positions ==================== */
+
+.animat :first-child {
+  font-size: 110px;
+  right: 10%;
+  top: 0.3%;
+}
+
+.animat :nth-child(2) {
+  font-size: 30px;
+  left: -1%;
+  top: 2%;
+}
+
+.animat :nth-child(3) {
+  font-size: 90px;
+  animation: rotate 3s infinite linear;
+  right: 50%;
+  top: 7%;
+}
+
+.animat :nth-child(4) {
+  font-size: 70px;
+  right: -1%;
+  top: 5%;
+}
+
+.animat :nth-child(5) {
+  font-size: 15px;
+  animation: rotate 1s infinite linear;
+  right: 70%;
+  top: 5%;
+}
+
+.animat :nth-child(6) {
+  font-size: 70px;
+  left: 3%;
+  top: 15%;
+}
+
+.animat :nth-child(7) {
+  font-size: 150px;
+  animation: rotate 4s infinite linear;
+  top: 10%;
+  right: 10%;
+}
+
+.animat :nth-child(8) {
+  font-size: 60px;
+  right: 70%;
+  top: 11%;
+}
+
+.animat :nth-child(9) {
+  font-size: 150px;
+  right: 40%;
+  top: 19%;
+}
+
+.animat :nth-child(10) {
+  font-size: 130px;
+  right: 30%;
+  top: 16%;
+}
+
+.animat :nth-child(11) {
+  font-size: 100px;
+  animation: rotate 3s infinite linear;
+  right: 40%;
+  top: 25%;
+}
+
+.animat :nth-child(12) {
+  font-size: 50px;
+  animation: rotate 5s infinite linear;
+  right: 5%;
+  top: 22%;
+}
+
+.animat :nth-child(13) {
+  font-size: 120px;
+  right: 10%;
+  top: 30%;
+}
+
+.animat :nth-child(14) {
+  font-size: 80px;
+  animation: rotate 1.5s infinite linear;
+  right: 70%;
+  top: 34%;
+}
+
+.animat :nth-child(15) {
+  font-size: 40px;
+  right: 10%;
+  top: 35%;
+}
+
+.animat :nth-child(16) {
+  font-size: 110px;
+  animation: rotate 4s infinite linear;
+  right: 10%;
+  top: 40%;
+}
+
+.animat :nth-child(17) {
+  font-size: 70px;
+  animation: rotate 3s infinite linear;
+  right: 90%;
+  top: 40%;
+}
+
+.animat :nth-child(18) {
+  font-size: 30px;
+  right: 27%;
+  top: 45%;
+}
+
+.animat :nth-child(19) {
+  font-size: 140px;
+  right: 40%;
+  top: 45%;
+}
+
+.animat :nth-child(20) {
+  font-size: 200px;
+  right: 60%;
+  top: 47%;
+}
+
+.animat :nth-child(21) {
+  font-size: 140px;
+  right: 30%;
+  top: 50%;
+}
+
+.animat :nth-child(22) {
+  font-size: 150px;
+  right: 10%;
+  top: 55%;
+}
+
+.animat :nth-child(23) {
+  font-size: 100px;
+  right: 70%;
+  top: 55%;
+}
+
+.animat :nth-child(24) {
+  font-size: 50px;
+  right: 70%;
+  top: 54%;
+}
+
+.animat :nth-child(25) {
+  font-size: 80px;
+  right: 70%;
+  top: 60%;
+}
+
+.animat :nth-child(26) {
+  font-size: 60px;
+  right: 30%;
+  top: 65%;
+}
+
+.animat :nth-child(27) {
+  font-size: 20px;
+  animation: rotate 2s infinite linear;
+  right: 20%;
+  top: 70%;
+}
+
+.animat :nth-child(28) {
+  font-size: 50px;
+  right: 60%;
+  top: 75%;
+}
+
+.animat :nth-child(29) {
+  font-size: 90px;
+  right: 40%;
+  top: 80%;
+}
+
+.animat :nth-child(30) {
+  font-size: 40px;
+  right: 10%;
+  top: 90%;
+}
+
+.animat :nth-child(31) {
+  font-size: 160px;
+  right: 60%;
+  top: 95%;
+}
+
+.animat :nth-child(32) {
+  font-size: 340px;
+  right: 40%;
+  top: 95%;
+}
+
+.animat :nth-child(33) {
+  font-size: 200px;
+  right: 20%;
+  top: 97%;
+}
+
+/* ==================== Animation ==================== */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes translate {
+  from {
+    transform: translateY(80vh);
+  }
+
+  to {
+    transform: translateY(-5100px);
+  }
+}
+
+/* ==================== Cards ==================== */
+
+.card1,
+.card2,
+.card3 {
+  width: 80%;
+
+  margin: auto;
+  margin-top: 2rem;
+
+  text-align: center;
+
+  min-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.111);
+
+  border-radius: 4rem;
+
+  padding: 1.1rem;
+
+  font-family: "Tajawal";
+
+  color: aliceblue;
+
+  opacity: 0;
+
+  transform: translateX(-100px);
+
+  transition:
+    transform 1s,
+    opacity 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* ==================== Mobile Menu ==================== */
+
+.max-1024 {
+  display: none;
+}
+
+.links-phone {
+  display: none;
+}
+
+/* ==================== Responsive ==================== */
+
+@media screen and (max-width: 1024px) {
+
+  nav {
+    display: none;
+  }
+
+  .fa-bars-staggered {
+    font-size: 2rem;
+
+    padding: 0.5rem;
+
+    cursor: pointer;
+
+    color: #35ac9d;
+
+    border: 1px solid #35ac9d;
+  }
+
+  .max-1024 {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .links-phone {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #c8cccd;
+
+    position: absolute;
+
+    left: calc(97% - 300px);
+    top: 3.5%;
+
+    width: 300px;
+
+    z-index: 1;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    border: #35ac9d 1px solid;
+
+    transform: translateX(400px);
+
+    opacity: 0;
+
+    transition: 1s;
+  }
+
+  .links-phone a {
+    text-decoration: none;
+
+    font-size: 1.2rem;
+
+    margin-right: 1rem;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+
+    color: #35ac9d;
+
+    font-family: "Amiri Quran", serif;
+  }
+
+  .links-phone a:hover {
+    color: #7baca5;
+
+    transform: translateY(-2px);
+  }
+
+  .links-phone::after {
+    content: "";
+
+    width: 15px;
+    height: 15px;
+
+    background-color: #c8cccd;
+
+    position: absolute;
+
+    top: -8px;
+
+    transform: rotate(46deg);
+
+    border-top: 1px solid #35ac9d;
+    border-left: 1px solid #35ac9d;
+
+    z-index: -1;
+  }
+
+  .show-links {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
