@@ -52,7 +52,7 @@ header {
 .logo {
   position: relative;
   display: inline-block;
-
+font-family: "Rakkas", serif;
   color: #35ac9d;
   font-size: 3rem;
 
